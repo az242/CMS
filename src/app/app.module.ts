@@ -4,19 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { XyzComponent } from './xyz/xyz.component';
-import { MatButtonModule, MatSliderModule, MatProgressSpinnerModule } from '@angular/material';
+import { MatButtonModule, MatSliderModule, MatProgressSpinnerModule, MatToolbarModule } from '@angular/material';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    XyzComponent
+    XyzComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatSliderModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
